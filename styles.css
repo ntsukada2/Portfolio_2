@@ -1,0 +1,17 @@
+html {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    color: #201f1e;
+  }
+
+.hero {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    border: 2px solid red;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
