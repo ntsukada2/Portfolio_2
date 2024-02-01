@@ -100,7 +100,7 @@ main {
 }
 
 .footer img {
-    margin-top: 250px;
+    margin-top: 350px;
     margin-left: 0px;
     opacity: 50%;
 }
@@ -165,14 +165,14 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 50px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 .bakery h3{
     border-bottom: 2px solid #F05C3B;
     font-family: 'Playfair Display', serif;
     color: #F05C3B;;
-    margin-right: 50px;
+ 
     grid-column: 1 / 3;
     justify-content: right;
 }
@@ -180,9 +180,11 @@ main {
 .bakery img {
     width: 950px;
     object-fit: cover;
+
 }
 
 .bakery p {
     display: grid;
     align-items: center;
 }
+
