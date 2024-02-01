@@ -1,0 +1,188 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #201f1e;
+    background-color: #F9f9f9;
+}
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    z-index:10;
+    border-bottom: 2px solid #c12300;
+    width: 1750px;
+    background-color: #f9f9f9;
+}
+
+.nav-wrapper {
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+.logo{
+float: right;
+}
+
+#navbar ul {
+    float: left;
+    line-height: 0px;
+    list-style-type: none;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+
+#real-menu {
+    display: none;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #c12300;
+    float: right;
+    /*margin-right: 60px;*/
+    line-height: 0px;
+}
+
+.hero{
+    margin-top: 100px;
+
+}
+
+.hero img{
+    width: 100%;
+}
+
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    position: absolute;
+}
+
+#contact img {
+    height: 50px;
+    width: 50px;
+}
+
+#about{
+    margin: 10px;
+}
+
+#about h3 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+#skills {
+    margin: 10px;
+}
+
+#skills h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+#contact {
+    margin: 10px;
+}
+#contact h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer {
+    position: fixed;
+
+}
+
+.footer img {
+    margin-top: 250px;
+    margin-left: 0px;
+    opacity: 50%;
+}
+
+/* ---- project.html styles ----*/
+.title {
+    margin-top: 100px;
+    margin-right: 150px;
+    text-align: right;
+}
+.title h2 {
+    font-family: 'Playfair Display',serif;
+    color: #E43812;
+}
+.club h3{
+    border-bottom: 2px solid #E43812;
+    font-family: 'Playfair Display', serif;
+    color: #E43812;
+
+    grid-column: 1 / 3;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+}
+.club {
+    display: grid;
+    grid-template-columns:  auto;
+    column-gap: 50px;
+    margin-right: 150px;
+}
+
+
+.club img{
+    width: 950px;
+    object-fit:cover;
+}
+
+.tea{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    margin-right: 100px;
+}
+
+.tea img {
+    width: 950px;
+    object-fit: cover;
+}
+
+.tea h3{
+    border-bottom: 2px solid #F05C3B;
+    font-family: 'Playfair Display', serif;
+    color: #F05C3B;;
+    margin-right: 50px;
+    grid-column: 1 / 3;
+    justify-content: right;
+}
+
+.bakery {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    margin-right: 100px;
+}
+
+.bakery h3{
+    border-bottom: 2px solid #F05C3B;
+    font-family: 'Playfair Display', serif;
+    color: #F05C3B;;
+    margin-right: 50px;
+    grid-column: 1 / 3;
+    justify-content: right;
+}
+
+.bakery img {
+    width: 950px;
+    object-fit: cover;
+}
+
+.bakery p {
+    display: grid;
+    align-items: center;
+}
