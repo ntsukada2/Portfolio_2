@@ -5,20 +5,46 @@ html {
     background-color: #F9f9f9;
 
 }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 /*---------------------------
 ---------Nav section---------
 ----------------------------*/
+nav {
+    width: 100%;
+    background-color:#C12300;
+    padding: 2rem 0 2rem 0;
+
+    line-height: 0px;
+    vertical-align: top;
+}
+
 nav p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #f7e4e0;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f7e4e0;
 }
 
 .nav-wrapper{
     display: grid;
     width: 100%;
     grid-template-areas: "about skills contact recent img  . . . . .  naomi";
-    border: 2px solid red;
-
-
+    border-bottom: 0.25rem solid #C13B1D;
+    margin-bottom: 2rem;
+    align-items: center;
 }
 
 .about-nav{
@@ -45,8 +71,8 @@ nav p {
 
 #arrow{
     grid-area: img;
-    text-align: center;
-    padding-top: 1.4rem;
+    font-size: 4rem;
+    margin: 0.75rem;
 
 }
 
@@ -54,9 +80,45 @@ h1 {
     grid-area: naomi;
     text-align: right;
     padding-right: 1.5rem;
-    font-size: 2.0rem;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: #f7e4e0;
 }
 
 /*---------------------------
 ---------Hero Image----------
 ----------------------------*/
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+/*---------------------------
+---------Main---------
+----------------------------*/
+
+main {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 50rem));
+    justify-content: space-between;
+    margin: 0 1rem 0 1rem;
+    padding: 2rem;
+}
+
+main h3 {
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    color: #F37F65;
+    border-bottom: 0.25rem solid #C13B1D;
+}
+
+main p {
+    font-size: 3rem;
+}
+
+#contact-main a img{
+    height: 8rem;
+    width: 8rem;
+}
