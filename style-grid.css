@@ -1,0 +1,62 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #201f1e;
+    background-color: #F9f9f9;
+
+}
+/*---------------------------
+---------Nav section---------
+----------------------------*/
+nav p {
+    font-size: 1.5rem;
+}
+
+.nav-wrapper{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "about skills contact recent img  . . . . .  naomi";
+    border: 2px solid red;
+
+
+}
+
+.about-nav{
+    grid-area: about;
+    padding-left: 1rem;
+    text-align: center;
+
+}
+.skills-nav{
+    grid-area: skills;
+    text-align: center;
+
+}
+.contact-nav{
+    grid-area: contact;
+    text-align: center;
+
+}
+.project-nav{
+    grid-area: recent;
+    text-align: center;
+
+}
+
+#arrow{
+    grid-area: img;
+    text-align: center;
+    padding-top: 1.4rem;
+
+}
+
+h1 {
+    grid-area: naomi;
+    text-align: right;
+    padding-right: 1.5rem;
+    font-size: 2.0rem;
+}
+
+/*---------------------------
+---------Hero Image----------
+----------------------------*/
