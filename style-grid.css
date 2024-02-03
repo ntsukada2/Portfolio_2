@@ -19,10 +19,9 @@ html {
 ---------Nav section---------
 ----------------------------*/
 nav {
-    width: 100%;
+
     background-color:#C12300;
     padding: 2rem 0 2rem 0;
-
     line-height: 0px;
     vertical-align: top;
 }
@@ -101,24 +100,50 @@ h1 {
 main {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 50rem));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 60rem));
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: 10rem 1rem 0 1rem;
     padding: 2rem;
+    height: 500px;
 }
 
 main h3 {
     font-size: 5rem;
     font-family: "Playfair Display", serif;
-    color: #F37F65;
-    border-bottom: 0.25rem solid #C13B1D;
+    color: #f7e4e0;
+    border-bottom: 0.25rem solid #f7cbc1;
 }
 
 main p {
     font-size: 3rem;
+    color: #f7e4e0;
+    margin-top: 2rem;
 }
 
 #contact-main a img{
     height: 8rem;
     width: 8rem;
+    
+}
+
+#about-main, #skills-main, #contact-main {
+    background-color: #c12300;
+    padding: 2rem;
+    border-radius: 10%;
+
+
+}
+
+
+/*------------------------------
+---------Footer Section---------
+--------------------------------*/
+
+.footer-main img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: 100% 0%;
+    opacity: 50%;
+    margin-top: 10rem;
 }
