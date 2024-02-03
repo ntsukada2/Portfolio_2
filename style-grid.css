@@ -5,6 +5,7 @@ html {
     background-color: #F9f9f9;
 
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -21,15 +22,16 @@ html {
 nav {
 
     background-color:#C12300;
-    padding: 2rem 0 2rem 0;
+    padding: 4rem 0 4rem 0;
     line-height: 0px;
     vertical-align: top;
 }
 
 nav p {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #f7e4e0;
     font-weight: bold;
+    
 }
 
 nav a {
@@ -37,53 +39,77 @@ nav a {
     color: #f7e4e0;
 }
 
+
 .nav-wrapper{
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-template-areas: "about skills contact recent img  . . . . .  naomi";
     border-bottom: 0.25rem solid #C13B1D;
     margin-bottom: 2rem;
     align-items: center;
-}
-
-.about-nav{
-    grid-area: about;
-    padding-left: 1rem;
-    text-align: center;
+    justify-content: space-around;
 
 }
-.skills-nav{
-    grid-area: skills;
-    text-align: center;
 
+.about-nav, .skills-nav, .contact-nav, .project-nav, #arrow {
+    flex-grow: 1;
+    margin: 0 1rem 0 1rem;
 }
-.contact-nav{
-    grid-area: contact;
-    text-align: center;
-
-}
-.project-nav{
-    grid-area: recent;
-    text-align: center;
-
+.about-nav, .skills-nav, .contact-nav, .project-nav {
+    display: none;
 }
 
 #arrow{
-    grid-area: img;
-    font-size: 4rem;
-    margin: 0.75rem;
-
+    font-size: 5rem;
+    margin-left: 4rem;
 }
 
 h1 {
-    grid-area: naomi;
+    flex-grow: 2;
     text-align: right;
-    padding-right: 1.5rem;
+    margin-right: 1rem;
     font-size: 4rem;
     font-family: 'Playfair Display', serif;
     color: #f7e4e0;
 }
+/*
+.about-nav{
+    flex-grow: 1;
+    padding-left: 1rem;
+    text-align: center;
+    border: 2px solid blue;
 
+}
+.skills-nav{
+    flex-grow: 1;
+    text-align: center;
+    border: 2px solid blue;
+}
+.contact-nav{
+    flex-grow: 1;
+    text-align: center;
+    border: 2px solid blue;
+}
+.project-nav{
+    flex-grow: 1;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+#arrow{
+    flex-grow: 1;
+    font-size: 4rem;
+    margin: 0.75rem;
+    border: 2px solid blue;
+}
+
+h1 {
+    flex-grow: 2;
+    text-align: right;
+    padding-right: 1.5rem;
+    
+    border: 2px solid blue;
+}
+*/
 /*---------------------------
 ---------Hero Image----------
 ----------------------------*/
@@ -131,7 +157,6 @@ main p {
     background-color: #c12300;
     padding: 2rem;
     border-radius: 10%;
-
 
 }
 
