@@ -14,8 +14,8 @@ html {
     border: 0;
     outline: 0;
     font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    /*vertical-align: baseline;
+    background: transparent;*/
 }
 /*------------------------------------index.html-------------------------------------*/
 
@@ -23,54 +23,64 @@ html {
 ---------Nav section---------
 ----------------------------*/
 nav {
-
+    display: flex;
     background-color:#C12300;
-    padding: 4rem 0 4rem 0;
-    line-height: 0px;
-    vertical-align: top;
-}
-
-nav p {
-    font-size: 3rem;
-    color: #f7e4e0;
-    font-weight: bold;
-    
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
     color: #f7e4e0;
+    font-size: 3rem;
+    padding: 2rem;
 }
 
-
-.nav-wrapper{
-    display: flex;
-    width: 100%;
-    border-bottom: 0.25rem solid #C13B1D;
-    margin-bottom: 2rem;
-    align-items: center;
-    justify-content: space-around;
-
-}
 
 .about-nav, .skills-nav, .contact-nav, .project-nav, #arrow {
     flex-grow: 1;
     margin: 0 2rem 0 2rem;
 }
 
-/*.about-nav, .skills-nav, .contact-nav, .project-nav {
-    display: none;
-}*/
+nav a:hover {
+    color:  #c12300;
+    background-color: #f7e4e0;
+}
+
+@media (max-width: 600px){
+    nav {
+        flex-direction: column;
+    }
+    #about, #skills, #contact, #project{
+        display: inline;
+    }
+
+    #arrow{
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px) {
+    #about, #skills, #contact, #project{
+        display: none;
+    }
+}
+
 
 #arrow{
     font-size: 5rem;
+    color: #f7e4e0;
     margin-left: 4rem;
 }
 
 h1 {
     flex-grow: 2;
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 4rem;
     font-size: 4rem;
     font-family: 'Playfair Display', serif;
     color: #f7e4e0;
@@ -81,9 +91,12 @@ h1 {
 ----------------------------*/
 
 .hero img{
-    width: 100%;
+    width: 98%;
     height: auto;
+    align-items: center;
+    justify-content: center;
     margin-top: 5rem;
+    margin: 5rem 2rem 0 2rem;
 }
 
 /*---------------------------
@@ -93,12 +106,21 @@ h1 {
 main {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 60rem));
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
     margin: 10rem 1rem 0 1rem;
     padding: 2rem;
     height: 500px;
 }
+
+@media (max-width: 600px){
+    main {
+        grid-template-columns: auto;
+        margin: 10rem 0 10rem 0;
+        row-gap: 2rem;
+    }
+}
+
 
 main h3 {
     font-size: 5rem;
@@ -123,6 +145,7 @@ main p {
     background-color: #c12300;
     padding: 2rem;
     border-radius: 10%;
+    margin: 0 1rem 0 1rem;
 
 }
 
@@ -138,6 +161,12 @@ main p {
     object-position: 100% 0%;
     opacity: 50%;
     margin-top: 10rem;
+}
+
+@media (max-width: 600px) {
+    .footer-main img{
+        display: none;
+    }
 }
 
 /*------------------------------------project.html-------------------------------------*/
