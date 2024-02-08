@@ -205,7 +205,31 @@ main p {
 
 }
 
+@media (max-width: 600px) {
+    .club-content, .tea-content, .bakery-content {
+        flex-direction: column;
+    
+    }
 
+    .club-content img, .tea-content img, .bakery-content img {
+        width: 40rem;
+        height: auto;
+        margin-top: 3rem;
+    
+    }
+
+    .project-title{
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+@media (min-width: 601px) {
+    .club-content img, .tea-content img, .bakery-content img {
+        width: 70rem;
+        height: auto;
+    
+    }
 .tea {
     grid-area: tea;
     display: flex;
@@ -213,7 +237,6 @@ main p {
 
 .bakery {
     grid-area: bakery;
-
     display: flex;
 }
 
@@ -234,3 +257,12 @@ main p {
 .tea h3{
     text-align: right;
 }
+
+
+
+.tea-content {
+    flex-direction: row-reverse;
+}
+}
+
+
