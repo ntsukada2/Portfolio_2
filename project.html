@@ -5,54 +5,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
+    <!--<link href="./styles.css" rel="stylesheet">-->
+    <link href="./style-grid.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="project">
     
-    <nav id="navbar"> <!--May just need to replace this with hamburger image, and have hidden list elsewhere-->
-        <div class="nav-wrapper">
-            <ul>    
-                <div id="real-menu">
-                    <a href="#about"><li>About</li></a>
-                    <a href="#skills"><li>Skills</li></a>
-                    <a href="#contact"><li>Contact</li></a>
-                    <a href="./index.html"><li>Home</li></a>
-                </div>
-                <a><li><img src="./images/rightArrow.png" alt="Menu Options" height="20px" width="20px"></li></a>
-    
-            </ul>
-            <div class="logo">
-                <h1>naomi t</h1>   
-            </div>
-             
-        </div>   
-    </nav>
-    <div class="title">
-        <h2>Recent Work</h2>
-    </div>
+    <nav class="nav-wrapper">  
+        <a href="index.html#about" id="about"><p class="about-nav">About</p></a>
+        <a href="index.html#skills" id="skills"><p class="skills-nav">Skills</p></a>
+        <a href="index.html#contact" id="contact"><p class="contact-nav">Contact</p></a>
+        <a href="./project.html" id="project"><p class="project-nav">Projects</p></a>
+        <p id="arrow">></p>
+        <h1 class="logo">naomi t</h1>   
+    </nav>   
+
+    <h2 class="project-title">Recent Work</h2>
     
     <div class="club">
-        <h3 class="item">Cincinnati Pickleball</h3>
+        <h3 class="item">Cincinnati Pickleball</h3><br>
+        <div class="club-content">
         <p class="item">I designed the pickleball site for the Cincinnati Pickleball club in order to help them organize and communicate events.</p>
         <img src="./images/clubproject.png" alt="Cincinnati Pickleball Website">    
+        </div>
     </div>
 
-    <div class="tea">
-      
-
-            
+    <div class="tea"> 
             <h3 class="item">Tea Cozy</h3>
-            <img src="./images/teaproject.png" alt="Tea Cozy Website">
-            <p class="item">I created the web page for a Tea Cozy to allow them to advertise their projects and grow their business.</p>
+            <div class="tea-content">
             
+            <p class="item">I created the web page for a Tea Cozy to allow them to advertise their projects and grow their business.</p>
+            <img src="./images/teaproject.png" alt="Tea Cozy Website">
+            </div>
+        </div>
 
-
-    </div>
     <div class="bakery">
         <h3>Tillman's Bakery</h3>
+        <div class="bakery-content">
         <p>I constructed and implemented a page for a small local bakery in order to streamline their ordering process.</p>
         <img src="./images/bakeryproject.png" alt="Tillman's Bakery Website">
+        </div>
     </div>
 
 </body>
