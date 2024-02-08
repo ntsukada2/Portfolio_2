@@ -1,0 +1,270 @@
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #201f1e;
+    background-color: #F9f9f9;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    /*vertical-align: baseline;
+    background: transparent;*/
+}
+/*------------------------------------index.html-------------------------------------*/
+
+/*---------------------------
+---------Nav section---------
+----------------------------*/
+nav {
+    display: flex;
+    background-color:#C12300;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f7e4e0;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.about-nav, .skills-nav, .contact-nav, .project-nav, #arrow {
+    flex-grow: 1;
+    margin: 0 2rem 0 2rem;
+}
+
+nav a:hover {
+    color:  #c12300;
+    background-color: #f7e4e0;
+}
+
+@media (max-width: 600px){
+    nav {
+        flex-direction: column;
+    }
+    #about, #skills, #contact, #project{
+        display: inline;
+    }
+
+    #arrow{
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px) {
+    #about, #skills, #contact, #project{
+        display: none;
+    }
+}
+
+
+#arrow{
+    font-size: 5rem;
+    color: #f7e4e0;
+    margin-left: 4rem;
+}
+
+h1 {
+    flex-grow: 2;
+    text-align: right;
+    margin-right: 4rem;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: #f7e4e0;
+}
+
+/*---------------------------
+---------Hero Image----------
+----------------------------*/
+
+.hero img{
+    width: 98%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin: 5rem 2rem 0 2rem;
+}
+
+/*---------------------------
+---------Main---------
+----------------------------*/
+
+main {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin: 10rem 1rem 0 1rem;
+    padding: 2rem;
+    height: 500px;
+}
+
+@media (max-width: 600px){
+    main {
+        grid-template-columns: auto;
+        margin: 10rem 0 10rem 0;
+        row-gap: 2rem;
+    }
+}
+
+
+main h3 {
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    color: #f7e4e0;
+    border-bottom: 0.25rem solid #f7cbc1;
+}
+
+main p {
+    font-size: 3rem;
+    color: #f7e4e0;
+    margin-top: 2rem;
+}
+
+#contact-main a img{
+    height: 8rem;
+    width: 8rem;
+    
+}
+
+#about-main, #skills-main, #contact-main {
+    background-color: #c12300;
+    padding: 2rem;
+    border-radius: 10%;
+    margin: 0 1rem 0 1rem;
+
+}
+
+
+/*------------------------------
+---------Footer Section---------
+--------------------------------*/
+
+.footer-main img{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: 100% 0%;
+    opacity: 50%;
+    margin-top: 10rem;
+}
+
+@media (max-width: 600px) {
+    .footer-main img{
+        display: none;
+    }
+}
+
+/*------------------------------------project.html-------------------------------------*/
+
+.project-title {
+    font-size: 3.5rem;
+    font-family: "Playfair Display",serif;
+
+    text-align: right;
+    margin-right: 1rem;
+    color: #C12300;
+}
+
+/*making changes blah blah blah*/
+
+.project body {
+    display: grid;
+    grid-template-areas: 
+        "club club"
+        "tea tea"
+        "bakery bakery";
+    
+}
+
+
+
+.club, .tea, .bakery {
+    grid-area: club;
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.club-content, .tea-content, .bakery-content {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+@media (max-width: 600px) {
+    .club-content, .tea-content, .bakery-content {
+        flex-direction: column;
+    
+    }
+
+    .club-content img, .tea-content img, .bakery-content img {
+        width: 40rem;
+        height: auto;
+        margin-top: 3rem;
+    
+    }
+
+    .project-title{
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+@media (min-width: 601px) {
+    .club-content img, .tea-content img, .bakery-content img {
+        width: 70rem;
+        height: auto;
+    
+    }
+.tea {
+    grid-area: tea;
+    display: flex;
+}
+
+.bakery {
+    grid-area: bakery;
+    display: flex;
+}
+
+.club p, .tea p, .bakery p {
+    font-size: 2.5rem;
+    padding: 0 2rem 0 2rem;
+
+
+}
+
+.club h3, .tea h3, .bakery h3 {
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    border-bottom: 2px solid #e43812;
+    color: #e43812;
+}
+
+.tea h3{
+    text-align: right;
+}
+
+
+
+.tea-content {
+    flex-direction: row-reverse;
+}
+}
+
+
