@@ -260,9 +260,16 @@ main p {
 
 
 
-.tea-content {
+}
+
+#club-content{
+    display:none;
+}
+
+#tea-content {
+    display: none;
     flex-direction: row-reverse;
 }
+#bakery-content{
+    display: none;
 }
-
-
